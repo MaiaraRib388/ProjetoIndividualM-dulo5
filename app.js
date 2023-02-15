@@ -1,4 +1,4 @@
-const redlineSync = require("readline-sync");
+const readlineSync = require("readline-sync");
 
 const lista = [];
 let resp = "";
@@ -16,7 +16,7 @@ const listar = () => {
 };
 
 while (true) {
-  resp = redlineSync.question("Digite a propriedade CSS ou 'SAIR' para exibir a listagem e encerrar: ");
+  resp = readlineSync.question("Digite a propriedade CSS ou 'SAIR' para exibir a listagem e encerrar: ");
 
   if (resp.toLowerCase() == "sair") {
     ordenar();
